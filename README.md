@@ -4,8 +4,6 @@ First iteration of an internal URL shortcut service.
 
 People reach long URLs through short names typed as `go/<name>`. Open `go/standup` and you're redirected to wherever `standup` points; if nobody has created it yet, you land on a form to create it.
 
-Scoped to 1 hour of my own time.
-
 
 ## Prerequisites
 

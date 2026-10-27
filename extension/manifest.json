@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Go Links (local)",
+  "version": "1.0.0",
+  "description": "Type go/<name> in the address bar to follow a Go Link on http://go.localhost:8000.",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "*://go/*",
+    "https://www.google.com/*",
+    "https://www.bing.com/*",
+    "https://duckduckgo.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{ "id": "go_links", "enabled": true, "path": "rules.json" }]
+  }
+}

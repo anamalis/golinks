@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "regexSubstitution": "http://go.localhost:8000/\\1" }
+    },
+    "condition": {
+      "regexFilter": "^https?://go/(.*)$",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "regexSubstitution": "http://go.localhost:8000/\\1" }
+    },
+    "condition": {
+      "regexFilter": "^https://(?:www\\.google\\.com/search|www\\.bing\\.com/search|duckduckgo\\.com/)\\?(?:[^#]*&)?q=go(?:%2[Ff]|/)([A-Za-z0-9_-]*(?:%2[Ff]|/)?)(?:[&#].*)?$",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
